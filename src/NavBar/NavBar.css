@@ -1,0 +1,9 @@
+a.log{
+    max-height: 60px ;
+}
+/* .bg-light {
+    background-color: #ffffff00 !important;
+} */
+.navigation li.nav-item a{
+    font-size: 20px;
+}
