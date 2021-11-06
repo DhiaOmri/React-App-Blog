@@ -1,4 +1,3 @@
-import { faCoffee, faRunning } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   MDBCard,
@@ -10,45 +9,91 @@ import {
   MDBRipple,
 } from "mdb-react-ui-kit";
 import React from "react";
+import { Link } from "react-router-dom";
 
-const BlogCard = ({blog:{fullName,category,image,description}}) => {
+const BlogCard = ({ blog: { id,title, fullName, category, image, description ,date} }) => {
   return (
-      <>
-    <div className="col-md-4">
-      <MDBCard>
-        <MDBRipple
-          rippleColor="light"
-          rippleTag="div"
-          className="bg-image hover-overlay"
-        >
-          <MDBCardImage
+    <>
+      <div className="col-lg-4 col-md-12 mb-lg-4 mb-4">
+        <div className="view overlay rounded z-depth-2 mb-4">
+          <img
+          style={{height:300,objectFit:"cover"}}
+            className="img-fluid"
             src={image}
-            fluid
-            alt="..."
+            alt="Sample image"
           />
-          <a href>
-            <div
-              className="mask"
-              style={{
-                background: 'linear-gradient(45deg, rgba(29, 236, 197, 0.5), rgba(91, 14, 214, 0.5) 100%)',
-              }}
-            ></div>
+          <a>
+            <div className="mask rgba-white-slight"></div>
           </a>
-        </MDBRipple>
-        <MDBCardBody>
-          <MDBCardTitle>{fullName}</MDBCardTitle>
-          <MDBCardText>
-            {description}
-          </MDBCardText>
-          <MDBBtn href="#">Show more</MDBBtn>
-          <MDBBtn size='lg' floating style={{ backgroundColor: '#ac2bac' }} className="d-block m-3">
-          <FontAwesomeIcon icon={["fas", "coffee"]} />
-    
-    </MDBBtn>
-        </MDBCardBody>
-      </MDBCard>
-    </div>
+        </div>
 
+        <a
+          href="#!"
+          className={
+               category.toLowerCase() == "it"
+              ? "orange-text"
+              : category.toLowerCase() == "sport"
+              ? "blue-text"
+              : category.toLowerCase() == "travel"
+              ? "text-secondary"
+              : category.toLowerCase() == "fitness"
+              ? "green-text"
+              : category.toLowerCase() == "lifestyle"
+              ? "text-info"
+              : category.toLowerCase() == "music"
+              ? "pink-text"
+              : ""
+          }
+        >
+          <h5 className="font-weight-bold mb-3">
+            <i className={
+               category.toLowerCase() == "it"
+              ? "fas fa-laptop-code pr-2"
+              : category.toLowerCase() == "sport"
+              ? "fas fa-volleyball-ball pr-2"
+              : category.toLowerCase() == "travel"
+              ? "fas fa-plane-departure pr-2"
+              : category.toLowerCase() == "fitness"
+              ? "fas fa-heartbeat pr-2"
+              : category.toLowerCase() == "lifestyle"
+              ? "fas fa-procedures pr-2"
+              : category.toLowerCase() == "music"
+              ? "fas fa-music pr-2"
+              : ""
+          }></i>
+            {category}
+          </h5>
+        </a>
+
+        <h4 className="font-weight-bold mb-3">
+          <strong>{title}</strong>
+        </h4>
+
+        <p>
+          by <a className="font-weight-bold">{fullName}</a>, {date.toString()}
+        </p>
+
+        <p className="dark-grey-text">
+          {description.slice(0,100)+'...'}
+        </p>
+        <Link to={`more/${id}`}>
+          <a  className={
+               category.toLowerCase() == "it"
+              ? "btn btn-warning btn-rounded"
+              : category.toLowerCase() == "sport"
+              ? "btn btn-primary btn-rounded"
+              : category.toLowerCase() == "travel"
+              ? "btn btn-secondary btn-rounded"
+              : category.toLowerCase() == "fitness"
+              ? "btn btn-success btn-rounded"
+              : category.toLowerCase() == "lifestyle"
+              ? "btn btn-lifestyle btn-rounded"
+              : category.toLowerCase() == "music"
+              ? "btn btn-danger btn-rounded"
+              : ""
+          }>Read more</a>
+        </Link>
+      </div>
     </>
   );
 };

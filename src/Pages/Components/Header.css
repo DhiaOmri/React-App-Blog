@@ -18,3 +18,9 @@ a.typewrite::after {
     background: white;
     margin-left: 5px;
 }
+.text-secondary {
+    color: #b23cfd !important;
+}
+.btn-lifestyle{
+    background-color: #17a2b8;
+}

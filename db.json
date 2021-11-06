@@ -1,28 +1,194 @@
 {
-    "blogs": [
-      {
-        "id": 1,
-        "fullName": "John Doe",
-        "image":"https://www.appsquadz.com/blog/wp-content/uploads/2019/02/web-tools.jpg",
-        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
-        "category":"faCoffee",
-        "date":""
-       
-      },
-      {
-        "id": 3,
-        "fullName": "John Doe",
-        "image":"https://www.appsquadz.com/blog/wp-content/uploads/2019/02/web-tools.jpg",
-        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
-        "category":"it"
-      },
-      {
-        "id": 4,
-        "fullName": "John Doe",
-        "image":"https://www.appsquadz.com/blog/wp-content/uploads/2019/02/web-tools.jpg",
-        "description":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
-        "category":"it"
-      }
-    ]
-  }
-  
+  "blogs": [
+    {
+      "id": 1,
+      "title": "IT article",
+      "fullName": "John Doe",
+      "image": "https://www.appsquadz.com/blog/wp-content/uploads/2019/02/web-tools.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "IT",
+      "date": "02/20/20"
+    },
+    {
+      "id": 2,
+      "title": "FITNESS article",
+      "fullName": "John Doe",
+      "image": "https://speedendurance.com/wp-content/uploads/2021/04/Circuit-training-workout.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "Fitness",
+      "date": "02/20/20"
+    },
+    {
+      "id": 3,
+      "title": "LIFESTYLE article",
+      "fullName": "John Doe",
+      "image": "https://www.notuxedo.com/wp-content/uploads/2017/05/photo-objets.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "Lifestyle",
+      "date": "02/20/20"
+    },
+    {
+      "id": 4,
+      "title": "TRAVEL article",
+      "fullName": "John Doe",
+      "image": "https://media.cntraveler.com/photos/60f5c0aa964f812d9f962cf0/4:3/w_2472,h_1854,c_limit/Fall%20Travel_GettyImages-1054391222.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "Travel",
+      "date": "02/20/20"
+    },
+    {
+      "id": 5,
+      "title": "MUSIC article",
+      "fullName": "John Doe",
+      "image": "https://www.tuck.dartmouth.edu/images/made/uploads/articles/slaughter-and-rees-report-the-impact-of-technology-on-intellectual-property-rights-and-revenue-_1500_1000_70.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "music",
+      "date": "02/20/20"
+    },
+    {
+      "id": 6,
+      "title": "SPORT article",
+      "fullName": "John Doe",
+      "image": "https://media.lesechos.com/api/v1/images/view/5e5e04b43e454609a3081d99/1280x720/0602862490248-web-tete.jpg",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo dolor doloremque inventore officia et repellat nobis provident, non mollitia necessitatibus perferendis, temporibus illo ex omnis! Nihil dignissimos omnis amet repudiandae odio repellat, quam voluptatem atque fugiat eveniet totam explicabo iure corporis culpa non! Fuga sed id temporibus illo cupiditate voluptates natus iure provident, incidunt architecto, ad alias sunt numquam corporis molestiae quis non? Dolor distinctio cumque iste illum dolore recusandae nesciunt. Officia magnam quibusdam corporis repellendus natus nihil iure eius nemo. Quo recusandae cupiditate, explicabo suscipit fuga, quod omnis doloribus, id voluptatum ducimus reiciendis iusto doloremque beatae a deserunt consequuntur.",
+      "category": "Sport",
+      "date": "02/20/20"
+    },
+    {
+      "id": 83270,
+      "fullName": "test",
+      "image": "dhia",
+      "description": "sd",
+      "category": "Sport",
+      "date": 1636146551125
+    },
+    {
+      "id": 91774,
+      "fullName": "zawachiomri@gmail.com",
+      "image": "sqd",
+      "description": "qsd",
+      "category": "Lifestyle",
+      "date": 1636146591350
+    },
+    {
+      "id": 97150,
+      "fullName": "sqd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "IT",
+      "date": 1636146619528
+    },
+    {
+      "id": 7645,
+      "fullName": "dq",
+      "image": "qsd",
+      "description": "qds",
+      "category": "IT",
+      "date": 1636146639040
+    },
+    {
+      "id": 73726,
+      "fullName": "sd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "IT",
+      "date": 1636146883917
+    },
+    {
+      "id": 99971,
+      "fullName": "qS",
+      "image": "QSD",
+      "description": "QSD",
+      "category": "",
+      "date": 1636146943587
+    },
+    {
+      "id": 26051,
+      "fullName": "sqd",
+      "image": "sd",
+      "description": "qsd",
+      "category": "Fitness",
+      "date": 1636147159192
+    },
+    {
+      "id": 74596,
+      "fullName": "aa",
+      "image": "aa",
+      "description": "aa",
+      "category": "IT",
+      "date": 1636189228190
+    },
+    {
+      "id": 50441,
+      "fullName": "zawachiomri@gmail.com",
+      "image": "dhia",
+      "description": "daz",
+      "category": "Fitness",
+      "date": 1636189341412
+    },
+    {
+      "id": 93765,
+      "fullName": "dsq",
+      "image": "dq",
+      "description": "dqs",
+      "category": "Fitness",
+      "date": 1636198993269
+    },
+    {
+      "id": 74029,
+      "fullName": "sqd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "Lifestyle",
+      "date": 1636199056764
+    },
+    {
+      "id": 44922,
+      "fullName": "sqd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "",
+      "date": 1636199244383
+    },
+    {
+      "id": 77994,
+      "fullName": "qsd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "Lifestyle",
+      "date": 1636199290867
+    },
+    {
+      "id": 48673,
+      "fullName": "dgd",
+      "image": "gd",
+      "description": "dfg",
+      "category": "Lifestyle",
+      "date": 1636199341313
+    },
+    {
+      "id": 83702,
+      "fullName": "dgd",
+      "image": "gd",
+      "description": "dfg",
+      "category": "Lifestyle",
+      "date": 1636199396850
+    },
+    {
+      "id": 90327,
+      "fullName": "dgd",
+      "image": "gd",
+      "description": "dfg",
+      "category": "Lifestyle",
+      "date": 1636199470598
+    },
+    {
+      "id": 61968,
+      "fullName": "sqd",
+      "image": "qsd",
+      "description": "qsd",
+      "category": "Fitness",
+      "date": 1636199569581
+    }
+  ]
+}

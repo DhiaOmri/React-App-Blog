@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_BLOG, BLOG_ERRORS, ADD_BLOG } from "./types";
+import { GET_BLOG, BLOG_ERRORS, SHOW_BLOG, FILTRE_BLOG, SEARCH_BLOG } from "./types";
 
 export const getBlogs = () => async (dispatch) => {
   try {
@@ -9,7 +9,20 @@ export const getBlogs = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    console.log(err);
+    dispatch({
+      type: BLOG_ERRORS,
+      payload: err.message,
+    });
+  }
+};
+export const showBloge = (id) => async (dispatch) => {
+  try {
+    const res = await axios.get(`/blogs/${id}`); // we added "proxy": "http://localhost:5000" in package.json
+    dispatch({
+      type: SHOW_BLOG,
+      payload: res.data,
+    });
+  } catch (err) {
     dispatch({
       type: BLOG_ERRORS,
       payload: err.message,
@@ -17,18 +30,17 @@ export const getBlogs = () => async (dispatch) => {
   }
 };
 
-export const addBlog = () => async (dispatch) => {
-  try {
-    const res = await axios.get("/blogs"); // we added "proxy": "http://localhost:5000" in package.json
-    dispatch({
-      type: ADD_BLOG,
-      payload: res.data,
-    });
-  } catch (err) {
-    console.log(err);
-    dispatch({
-      type: BLOG_ERRORS,
-      payload: err.message,
-    });
-  }
+export const filterBlog = (x) => {
+
+  return {
+    type: FILTRE_BLOG,
+    payload:x,
+  };
+};
+export const searchBloge = (y) => {
+console.log(y);
+  return {
+    type: SEARCH_BLOG,
+    payload:y,
+  };
 };

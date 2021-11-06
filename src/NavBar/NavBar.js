@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.css";
 import logo from "./logo.png";
 import {
@@ -9,15 +9,24 @@ import {
   MDBNavbarItem,
   MDBNavbarLink,
   MDBCollapse,
-  MDBBtn,
   MDBIcon,
   MDBNavbarNav,
 } from "mdb-react-ui-kit";
 import { NavLink } from "react-router-dom";
+import { searchBloge } from "../Actions/blogActions";
+import { useDispatch } from "react-redux";
 function NavBar() {
+const [txtSearch,setTxtSearch]=useState('')
+const dispatch=useDispatch()
+const handleChange = (e) => {
+  setTxtSearch(e.target.value);
+  dispatch(searchBloge(txtSearch))
+};
+
   return (
+    
     <div className=" navigation" >
-      <MDBNavbar fixed='top'  expand="lg" light bgColor="light">
+      <MDBNavbar fixed-top expand="lg" light bgColor="light" sticky>
         <MDBContainer fluid>
           <MDBNavbarBrand href="#" className="logo">
             <img src={logo} alt="" />
@@ -47,16 +56,7 @@ function NavBar() {
                   <MDBNavbarLink>Home</MDBNavbarLink>
                 </MDBNavbarItem>
               </NavLink>
-              <NavLink
-                to="/about"
-                activeStyle={{
-                  fontWeight: "bold",
-                }}
-              >
-                <MDBNavbarItem>
-                  <MDBNavbarLink>About</MDBNavbarLink>
-                </MDBNavbarItem>
-              </NavLink>
+             
               <NavLink
                 to="/write"
                 activeStyle={{
@@ -84,8 +84,10 @@ function NavBar() {
                 className="form-control"
                 placeholder="Type query"
                 aria-label="Search"
+                value={txtSearch}
+                onChange={handleChange}
               />
-              <MDBBtn color="primary">Search</MDBBtn>
+          
             </form>
           </MDBCollapse>
         </MDBContainer>
